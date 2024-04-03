@@ -20,9 +20,9 @@ const CambioEuro = () => {
 
   return (
     <div>
-      <input type="number" value={valorReal} onChange={conversaoReal} />
+      <input type="number" value={valorReal.toFixed(2)}  onChange={conversaoReal} />
       reais é igual a
-      <input type="number" value={valorEuro} onChange={conversaoEuro} />
+      <input type="number" value={valorEuro.toFixed(2)} onChange={conversaoEuro} />
       euros
     </div>
   );
